@@ -1,0 +1,16 @@
+{
+	"name": "robmcvey/cakephp-paypal",
+	"description": "PayPal plugin",
+	"type": "cakephp-plugin",
+	"require": {
+		"php": ">=5.2.8",
+		"ext-mcrypt": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "3.7.*",
+		"cakephp/debug_kit" : "2.2.*"
+	},
+	"bin": [
+		"lib/Cake/Console/cake"
+	]
+}

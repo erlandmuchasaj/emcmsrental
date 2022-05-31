@@ -1,0 +1,41 @@
+/* SmartWizard 2.0 plugin http://www.techlaboratory.net*/
+/*Main Wizard Wrap*/
+.swMain{position:relative;display:block;margin:0;padding:0;border:0;overflow:visible;float:none;width:100%;margin:0 auto;margin-bottom:25px;background-color: transparent;}
+/*Main Content Wrap*/
+.swMain .stepContainer{display:block;position:relative;margin:0;padding:0;overflow:visible;clear:both;height:auto}
+.swMain .stepContainer div.wizard-inner-content {display:block;position:relative;float:left;margin:0;padding:10px 15px;border:0;background-color:#F8F8F8;text-align:left;overflow:visible;clear:both;height:auto;width:100%}
+.swMain div.actionBar{display:block;position:relative;clear:both;margin:0;border:0;padding:0;color:#fff;background-color:#34C8C8;height:40px;height:auto;text-align:left;overflow:auto;z-index:10;left:0}
+.swMain .stepContainer .StepTitle{display:block;position:relative;margin:-10px -15px 15px;border:1px solid #34C8C8;padding:5px 15px;font:bold 16px Verdana,Arial,Helvetica,sans-serif;color:#fff;background-color:#34C8C8;clear:both;text-align:left;z-index:15;}
+.swMain .stepContainer .StepTitle span{display:inline-block;position:relative;font-weight:lighter;font-size:14px}
+/* Anchor Element Style */
+.swMain ul.anchor{position:relative;display:block;float:left;list-style:none;padding:0;margin:5px 0 14px;clear:both;border:0 solid #CCC;background:transparent}
+.swMain ul.anchor li{position:relative;display:block;margin:0;padding:0 3px;border:0 solid #E0E0E0;float:left}
+.swMain ul.anchor li a{display:block;position:relative;float:left;padding:0 10px;height:auto;width:auto;text-decoration:none;outline-style:none;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;color:#FFF;background:#283d50;line-height:100%;z-index:20}
+.swMain ul.anchor li a .stepNumber{position:relative;float:left;width:30px;text-align:center;margin:0;font:bold 45px Verdana,Arial,Helvetica,sans-serif}
+.swMain ul.anchor li a .stepDesc{position:relative;display:block;float:left;text-align:left;padding:5px;font:bold 18px Verdana,Arial,Helvetica,sans-serif;text-transform:capitalize}
+.swMain ul.anchor li a .stepDesc small{font:normal 12px Verdana,Arial,Helvetica,sans-serif;text-transform:capitalize}
+.swMain ul.anchor li a.selected{margin-top:6px;color:#F8F8F8;background:#34C8C8;border:1px solid #34C8C8;cursor:pointer;-moz-transition:all .25s ease 0;-o-transition:all .25s ease 0;-webkit-transition:all .25s ease 0;transition:all .25s ease 0}
+.swMain ul.anchor li a.selected:after{top:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(136,183,213,0);border-top-color:#34C8C8;border-width:15px;margin-left:-15px;margin-top: -1px; z-index:-1}
+.swMain ul.anchor li a.selected:hover{cursor:pointer}
+.swMain ul.anchor li a.done{position:relative;color:#FFF;background:#FBC210;border:1px solid #FBC210;-moz-transition:all .25s ease 0;-webkit-transition:all .25s ease 0;-o-transition:all .25s ease 0;transition:all .25s ease 0;z-index:20}
+.swMain ul.anchor li a.done:hover{color:#000;cursor:pointer}
+.swMain ul.anchor li a.disabled{color:#1FB5AD;background:#F8F8F8;border:1px solid transparent;cursor:text}
+.swMain ul.anchor li a.disabled:hover {/*color:#CCCCCC;background: #F8F8F8;*/ }
+.swMain ul.anchor li a.error{color:#fff!important;background:#FF3F3F!important;border:1px solid #fb3500!important}
+.swMain ul.anchor li a.error:after{top:100%;left:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(136,183,213,0);border-top-color:#ff3f3f;border-width:15px;margin-left:-15px}
+.swMain ul.anchor li a.error:hover{color:#000!important;cursor:pointer}
+.swMain .buttonNext{display:block;float:right;margin:5px 3px;padding:5px;text-decoration:none;text-align:center;font:bold 13px Verdana,Arial,Helvetica,sans-serif;width:100px;color:#FFF;outline-style:none;background-color:#FBC210;border:1px solid #FBC210;}
+.swMain .buttonDisabled{color:#F8F8F8!important;background-color:#CCC!important;border:1px solid #CCC!important;cursor:text}
+.swMain .buttonPrevious{display:block;float:right;margin:5px 3px;padding:5px;text-decoration:none;text-align:center;font:bold 13px Verdana,Arial,Helvetica,sans-serif;width:100px;color:#FFF;outline-style:none;background-color:#FBC210;border:1px solid #FBC210;}
+.swMain .buttonFinish{display:block;float:right;margin:5px 10px 5px 3px;padding:5px;text-decoration:none;text-align:center;font:bold 13px Verdana,Arial,Helvetica,sans-serif;width:100px;color:#FFF;outline-style:none;background-color:#FBC210;border:1px solid #FBC210;}
+/* Form Styles */
+.txtBox{border:1px solid #CCC;color:#5A5655;font:13px Verdana,Arial,Helvetica,sans-serif;padding:2px;width:430px}
+.txtBox:focus{border:1px solid #EA8511}
+.swMain .loader{position:relative;display:none;float:left;margin:2px 0 0 2px;padding:8px 10px 8px 40px;border:1px solid #FFD700;font:bold 13px Verdana,Arial,Helvetica,sans-serif;color:#5A5655;background:#FFF url(../../images/loader.gif) no-repeat 5px;z-index:20}
+.swMain .msgBox{position:relative;display:none;float:left;margin:3px;padding:5px;border:1px solid #FFD700;background-color:#FFD;font:normal 12px Verdana,Arial,Helvetica,sans-serif;color:#5A5655;z-index:25;min-width:200px}
+.swMain .msgBox .msg-content{font:normal 12px Verdana,Arial,Helvetica,sans-serif;padding:0;float:left; min-height:auto}
+.swMain .msgBox .close{border:1px solid #CCC;color:#CCC;display:block;float:right;margin:0 0 0 5px;outline-style:none;padding:0 2px;position:relative;text-align:center;text-decoration:none}
+.swMain .msgBox .close:hover{color:#EA8511;border:1px solid #EA8511}
+@media (max-width: 767px) {
+.swMain ul.anchor li a .stepDesc{display:none!important}
+}

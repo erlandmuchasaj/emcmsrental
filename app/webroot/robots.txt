@@ -1,0 +1,6 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+Sitemap: http://emcmsrental.erlandmuchasaj.com/sitemap.xml
+User-agent: *
+Disallow:

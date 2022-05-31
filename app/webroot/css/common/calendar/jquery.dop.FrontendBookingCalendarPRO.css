@@ -1,0 +1,394 @@
+@charset "utf-8";
+/*
+* Title                   : Booking Calendar PRO (jQuery Plugin)
+* Version                 : 1.2
+* File                    : jquery.dop.FrontendBookingCalendarPRO.css
+* File Version            : 1.2
+* Created / Last Modified : 20 May 2013
+* Author                  : Dot on Paper
+* Copyright               : © 2011 Dot on Paper
+* Website                 : http://www.dotonpaper.net
+* Description             : Booking Calendar PRO Front End Stylesheet.
+*/
+/******************************************************************************* Container */
+.DOPFrontendBookingCalendarPRO_Container{background: #ffffff;font: 12px/1em Arial, Helvetica, sans-serif !important;margin: 0;padding: 0;position: relative;}
+.DOPFrontendBookingCalendarPRO_Container.loader{background: #ffffff url('loader.gif') no-repeat center center;height: 15px;margin: 10px 0 0 0;padding: 5px 0;}
+.DOPFrontendBookingCalendarPRO_Clear{clear: both;}
+/******************************************************************************* Navigation */
+.DOPFrontendBookingCalendarPRO_Navigation{background-color: #101010;margin: 0;padding: 0;position: relative;z-index: 200;}
+.DOPFrontendBookingCalendarPRO_Navigation .previous_btn{background: url("sprite.png") 0 0;cursor: pointer;display: none;height: 24px;margin: 0;padding: 0;position: absolute;right: 40px;top: 10px;width: 24px;}
+.DOPFrontendBookingCalendarPRO_Navigation .previous_btn.hover{background: url("sprite.png") -25px 0;}
+.DOPFrontendBookingCalendarPRO_Navigation .next_btn{background: url("sprite.png") -50px 0;cursor: pointer;height: 24px;margin: 0;padding: 0;position: absolute;right: 10px;top: 10px;width: 24px;}
+.DOPFrontendBookingCalendarPRO_Navigation .next_btn.hover{background: url("sprite.png") -75px 0;}
+.DOPFrontendBookingCalendarPRO_Navigation .add_btn{background: url("sprite.png") -100px 0;cursor: pointer;height: 24px;left: 10px;margin: 0;padding: 0;position: absolute;top: 10px;width: 24px;}
+.DOPFrontendBookingCalendarPRO_Navigation .add_btn.hover{background: url("sprite.png") -125px 0;}
+.DOPFrontendBookingCalendarPRO_Navigation .remove_btn{background: url("sprite.png") -150px 0;cursor: pointer;display: none;height: 24px;left: 40px;margin: 0;padding: 0;position: absolute;top: 10px;width: 24px;}
+.DOPFrontendBookingCalendarPRO_Navigation .remove_btn.hover{background: url("sprite.png") -175px 0;}
+.DOPFrontendBookingCalendarPRO_Navigation .month_year{color: #e0e0e0;font: bold 16px/24px Arial, Helvetica, sans-serif !important;margin: 0;padding: 10px;text-align: center;}
+.DOPFrontendBookingCalendarPRO_Navigation .week{margin: 0;padding: 0 5px 10px 5px;}
+.DOPFrontendBookingCalendarPRO_Navigation .week .day{color: #e0e0e0;display: block;font: 12px/1em Arial, Helvetica, sans-serif !important;float: left;margin: 0;padding: 0;text-align: center;}
+/******************************************************************************* Calendar */
+.DOPFrontendBookingCalendarPRO_Calendar{margin: 0;position: relative;text-align: center;z-index: 300;}
+.DOPFrontendBookingCalendarPRO_Month{background: #ffffff;padding: 15px 5px;}
+.DOPFrontendBookingCalendarPRO_Month .month_year{border-bottom: 1px solid #e0e0e0;color: #6f6f6f;font: bolder 15px/1em Arial, Helvetica, sans-serif !important;margin: 0 0 10px 0;padding: 5px 0 10px 5px;position: relative;text-align: left;}
+/************************************************************************ Day */
+.DOPFrontendBookingCalendarPRO_Day{float: left;margin: 2px 0 0 0;padding: 0;}
+.DOPFrontendBookingCalendarPRO_Day .bind-left, 
+.DOPFrontendBookingCalendarPRO_Day .bind-right{float: left;opacity: 0;filter: alpha(opacity=0);width: 1px;}
+.DOPFrontendBookingCalendarPRO_Day .bind-left.enabled,
+.DOPFrontendBookingCalendarPRO_Day .bind-left.extended,  
+.DOPFrontendBookingCalendarPRO_Day .bind-right.enabled,  
+.DOPFrontendBookingCalendarPRO_Day .bind-right.extended{opacity: 1;filter: alpha(opacity=100);}
+.DOPFrontendBookingCalendarPRO_Day .bind-left .header, 
+.DOPFrontendBookingCalendarPRO_Day .bind-right .header{
+background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-left: none !important;
+border-right: none !important;
+font: bold 12px/15px Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 2px 0 2px 0 !important;
+width: 1px !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-left .content, 
+.DOPFrontendBookingCalendarPRO_Day .bind-right .content{
+background: #ffffff !important;
+border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+font: bold 12px/1em Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 4px 0 4px 0 !important;
+width: 1px !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content{float: left;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header{
+background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+-webkit-border-top-left-radius: 2px !important;
+-webkit-border-top-right-radius: 2px !important;
+-moz-border-topleft-radius: 2px !important;
+-moz-border-topright-radius: 2px !important;
+border-top-left-radius: 2px !important;
+border-top-right-radius: 2px !important;
+display: block !important;
+font: 12px/15px Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 2px 0 2px 5px !important;
+position: relative !important;
+width: auto !important;   
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1 .header{-webkit-border-top-left-radius: 2px !important;-webkit-border-top-right-radius: 0px !important;-moz-border-topleft-radius: 2px !important;-moz-border-topright-radius: 0px !important;border-top-left-radius: 2px !important;border-top-right-radius: 0px !important;border-right: none !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .header,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3.extended .header{-webkit-border-top-left-radius: 0px !important;-webkit-border-top-right-radius: 0px !important;-moz-border-topleft-radius: 0px !important;-moz-border-topright-radius: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;border-left-color: transparent !important;border-right-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group0.extended .header,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1.extended .header,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3 .header{-webkit-border-top-left-radius: 0px !important;-webkit-border-top-right-radius: 2px !important;-moz-border-topleft-radius: 0px !important;-moz-border-topright-radius: 2px !important;border-top-left-radius: 0px !important;border-top-right-radius: 2px !important;border-left: none !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header .day{color: #ffffff;float: left;font: bold 12px/15px Arial, Helvetica, sans-serif !important;margin: 0;padding: 0;position: relative !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header .co{
+background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-right: none;
+-webkit-border-top-left-radius: 2px !important;
+-moz-border-topleft-radius: 2px !important;
+border-top-left-radius: 2px !important;
+height: 19px;
+left: -1px;
+padding: 0px 0px 0px 1px !important;
+position: absolute !important;
+top: -1px;
+width: 50% !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header .ci{
+background: #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-left: none;
+-webkit-border-top-right-radius: 2px !important;
+-moz-border-topright-radius: 2px !important;
+border-top-right-radius: 2px !important;
+height: 19px;
+right: -1px;
+position: absolute !important;
+top: -1px;
+width: 50% !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .header .co{-webkit-border-top-left-radius: 0px !important;-moz-border-topleft-radius: 0px !important;border-top-left-radius: 0px !important;border-left-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3.extended .header .co{-webkit-border-top-left-radius: 0px !important;-moz-border-topleft-radius: 0px !important;border-top-left-radius: 0px !important;border-left-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group0.extended .header .co,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1.extended .header .co,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1 .header .ci,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .header .ci{-webkit-border-top-right-radius: 0px !important;-moz-border-topright-radius: 0px !important;border-top-right-radius: 0px !important;border-right-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header .info{background: url("sprite.png") -200px 0;cursor: pointer;float: right;height: 15px;margin: 0 2px 0 0;width: 15px;position: relative !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .header .info.hover{background: url("sprite.png") -215px 0;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content{
+background: #ffffff !important;
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-top: none !important;
+-webkit-border-bottom-left-radius: 2px !important;
+-webkit-border-bottom-right-radius: 2px !important;
+-moz-border-bottomleft-radius: 2px !important;
+-moz-border-bottomright-radius: 2px !important;
+border-bottom-left-radius: 2px !important;
+border-bottom-right-radius: 2px !important;
+color: #222222 !important;
+display: block !important;
+font: 12px/1em Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 4px 5px 4px 5px !important;
+position: relative !important;
+text-align: left !important;
+vertical-align: middle !important;
+width: auto !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content .co{
+background: transparent;
+border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-right: none;
+border-top: none;
+-webkit-border-bottom-left-radius: 2px !important;
+-moz-border-bottomleft-radius: 2px !important;
+border-bottom-left-radius: 2px !important;
+left: -1px;
+height: inherit !important;
+padding: 4px 0px 4px 1px !important;
+position: absolute !important;
+top: 0;
+width: 50% !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content .ci{
+background: transparent;
+border: 1px solid #cccccc; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-left: none;
+border-top: none;
+-webkit-border-bottom-right-radius: 2px !important;
+-moz-border-bottomright-radius: 2px !important;
+border-bottom-right-radius: 2px !important;
+height: inherit !important;
+padding: 4px 1px 4px 0 !important;
+position: absolute !important;
+right: -1px;
+top: 0;
+width: 50% !important;
+}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1 .content{-webkit-border-bottom-left-radius: 3px !important;-webkit-border-bottom-right-radius: 0px !important;-moz-border-bottomleft-radius: 3px !important;-moz-border-bottomright-radius: 0px !important;border-bottom-left-radius: 3px !important;border-bottom-right-radius: 0px !important;border-right-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group0.extended .content,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1.extended .content,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3 .content{-webkit-border-bottom-left-radius: 0px !important;-webkit-border-bottom-right-radius: 3px !important;-moz-border-bottomleft-radius: 0px !important;-moz-border-bottomright-radius: 3px !important;border-bottom-left-radius: 0px !important;border-bottom-right-radius: 3px !important;border-left-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .content,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3.extended .content{-webkit-border-bottom-left-radius: 0px !important;-webkit-border-bottom-right-radius: 0px !important;-moz-border-bottomleft-radius: 0px !important;-moz-border-bottomright-radius: 0px !important;border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;border-left-color: transparent !important;border-right-color: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group0.extended .content .co,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1.extended .content .co,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .content .co,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3 .content .co{-webkit-border-bottom-left-radius: 0px !important;-moz-border-bottomleft-radius: 0px !important;border-bottom-left-radius: 0px !important;border-left: none !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group1 .content .ci,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group2 .content .ci,
+.DOPFrontendBookingCalendarPRO_Day .bind-content.group3.extended .content .ci{-webkit-border-bottom-right-radius: 0px !important;-moz-border-bottomright-radius: 0px !important;border-bottom-right-radius: 0px !important;border-right-color: transparent !important;border-right: transparent !important;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content .old-price{color: #909090;float: left;font-size: 12px;line-height: 1em;text-decoration: line-through;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content .price{color: #606060;float: left;font: bold 12px/1em Arial, Helvetica, sans-serif !important;padding: 0 5px 0 0;}
+.DOPFrontendBookingCalendarPRO_Day .bind-content .content .available{color: #909090;font: 11px/1em Arial, Helvetica, sans-serif !important;width: 100%;}
+/* Last Month Day */
+.DOPFrontendBookingCalendarPRO_Day.last_month,
+.DOPFrontendBookingCalendarPRO_Day.last_month .bind-left.enabled,
+.DOPFrontendBookingCalendarPRO_Day.last_month .bind-left.extended,  
+.DOPFrontendBookingCalendarPRO_Day.last_month .bind-right.enabled,  
+.DOPFrontendBookingCalendarPRO_Day.last_month .bind-right.extended{opacity: 0.5;filter: alpha(opacity=50);}
+/* Past Day */
+.DOPFrontendBookingCalendarPRO_Day.past_day,
+.DOPFrontendBookingCalendarPRO_Day.past_day .bind-left.enabled,
+.DOPFrontendBookingCalendarPRO_Day.past_day .bind-left.extended,  
+.DOPFrontendBookingCalendarPRO_Day.past_day .bind-right.enabled,  
+.DOPFrontendBookingCalendarPRO_Day.past_day .bind-right.extended{opacity: 0.25;filter: alpha(opacity=25);}
+/* Current Month Day */
+.DOPFrontendBookingCalendarPRO_Day.curr_month{}
+/* Next Month Day */
+.DOPFrontendBookingCalendarPRO_Day.next_month{opacity: 0.5;filter: alpha(opacity=50);}
+/* Available Day */
+.DOPFrontendBookingCalendarPRO_Day.available .header,
+.DOPFrontendBookingCalendarPRO_Day .header .co.available,
+.DOPFrontendBookingCalendarPRO_Day .header .ci.available,
+.DOPFrontendBookingCalendarPRO_Day .bind-left.extended.available .header{
+background-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+.DOPFrontendBookingCalendarPRO_Day.available .content,
+.DOPFrontendBookingCalendarPRO_Day .content .co.available,
+.DOPFrontendBookingCalendarPRO_Day .content .ci.available,
+.DOPFrontendBookingCalendarPRO_Day .bind-left.extended.available .content{
+border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+/* Booked Day */
+.DOPFrontendBookingCalendarPRO_Day.booked .header,
+.DOPFrontendBookingCalendarPRO_Day .header .co.booked,
+.DOPFrontendBookingCalendarPRO_Day .header .ci.booked{
+background-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+.DOPFrontendBookingCalendarPRO_Day.booked .content,
+.DOPFrontendBookingCalendarPRO_Day .content .co.booked,
+.DOPFrontendBookingCalendarPRO_Day .content .ci.booked{
+border-color: #dd6464 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+/* Special Day */
+.DOPFrontendBookingCalendarPRO_Day.special .header,
+.DOPFrontendBookingCalendarPRO_Day .header .co.special,
+.DOPFrontendBookingCalendarPRO_Day .header .ci.special,
+.DOPFrontendBookingCalendarPRO_Day .bind-left.extended.special .header{
+background-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+.DOPFrontendBookingCalendarPRO_Day.special .content,
+.DOPFrontendBookingCalendarPRO_Day .content .co.special,
+.DOPFrontendBookingCalendarPRO_Day .content .ci.special,
+.DOPFrontendBookingCalendarPRO_Day .bind-left.extended.special .content{
+border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+/* Unavailable Day */
+.DOPFrontendBookingCalendarPRO_Day.unavailable .header,
+.DOPFrontendBookingCalendarPRO_Day .header .co.unavailable,
+.DOPFrontendBookingCalendarPRO_Day .header .ci.unavailable{
+background-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+.DOPFrontendBookingCalendarPRO_Day.unavailable .content,
+.DOPFrontendBookingCalendarPRO_Day .content .co.unavailable,
+.DOPFrontendBookingCalendarPRO_Day .content .ci.unavailable{
+border-color: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. */
+}
+/* Mask Day */
+.DOPFrontendBookingCalendarPRO_Day.mask{cursor: default;opacity: 0;filter: alpha(opacity=0);}
+/* Hide Day */
+.DOPFrontendBookingCalendarPRO_Day.hide{display: none;}
+/* Grouped Days - First Column */
+.DOPFrontendBookingCalendarPRO_Day.first-column .bind-left{opacity: 0 !important;filter: alpha(opacity=0) !important;}
+/* Grouped Days - Last Column */
+.DOPFrontendBookingCalendarPRO_Day.last-column .bind-content.group1 .header .ci,
+.DOPFrontendBookingCalendarPRO_Day.last-column .bind-content.group2 .header .ci{right: 0px !important;}
+.DOPFrontendBookingCalendarPRO_Day.last-column .bind-right{opacity: 0 !important;filter: alpha(opacity=0) !important;}
+/******************************************************************************* Info */
+.DOPFrontendBookingCalendarPRO_Info{background: #fcfcfc;border: 1px solid #909090;-webkit-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-box-shadow: 2px 2px 4px #b0b0b0;-webkit-box-shadow: 2px 2px 4px #b0b0b0;box-shadow: 2px 2px 4px #b0b0b0;color: #606060;display: none;font: 12px/1em Arial, Helvetica, sans-serif !important;max-width: 300px;left: 0px;padding: 10px;position: absolute;top: 0px;z-index: 1000000;}
+/*Sidebar styling*/
+.DOPBCPCalendar-sidebar {
+	overflow:hidden;
+	padding:0
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module {
+	background:#fcfcfc;
+	border-top:1px solid #ccc;
+	padding: 0 15px;
+	min-width:220px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module h4 {
+	color:#464646;
+	display:block;
+	font-size:18px;
+	line-height:20px;
+	margin:0;
+	padding:10px 0 20px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-message {
+	background:#464646;
+	color:#fff;
+	font-size:13px;
+	font-weight:300;
+	line-height:20px;
+	margin:0 0 10px;
+	padding:5px 10px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-message.dopbcp-success {
+	background:#9cbc72
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-message.dopbcp-error {
+	background:#f1705c
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper {
+	margin:0 -15px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart {
+	margin-bottom: 15px;
+	table-layout:fixed;
+	width:100%
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td {
+	border:none!important;
+	display:table-cell;
+	font-size:13px;
+	line-height:15px;
+	overflow:hidden;
+	padding: 5px 0;
+	text-align:left;
+	vertical-align:top
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-label {
+	color:#424242;
+	padding-left: 15px;
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-value {
+	color:#666;
+	padding-right:15px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-value.dopbcp-price {
+	font-weight:700
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-value.dopbcp-info {
+	font-style:italic
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-value .dopbcp-info-rule {
+	font-size:12px;
+	font-style:normal
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart td.dopbcp-value .dopbcp-info-price {
+	font-size:12px;
+	font-style:normal;
+	font-weight:700
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart tr.dopbcp-separator td {
+	background:none;
+	border:none!important;
+	height:20px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart tr.dopbcp-separator td.dopbcp-label {
+	padding:0 0 0 10px !important
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart tr.dopbcp-separator td.dopbcp-value {
+	padding:0 10px 0 0 !important
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart tr.dopbcp-separator td .dopbcp-line {
+	border-bottom:1px solid #ccc;
+	height:0;
+	padding:20px 0 0;
+	margin:0 0 20px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart .dopbcp-total td.dopbcp-label {
+	background-color: #3c3f40;
+	background-color: rgba(60,63,64,0.9);
+	color:#fff;
+	font-size:15px;
+	line-height:20px;
+	padding:20px 0 20px 15px
+}
+
+.DOPBCPCalendar-sidebar .dopbcp-module .dopbcp-cart-wrapper .dopbcp-cart .dopbcp-total td.dopbcp-value {
+	background-color: #3c3f40;
+	background-color: rgba(60,63,64,0.9);
+	color:#fff;
+	font-size:20px;
+	line-height:20px;
+	padding:20px 15px 20px 0;
+}

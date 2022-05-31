@@ -1,0 +1,19 @@
+2019-02-22 14:44:58 Error: createCardToken, type:, http_status:, param:, message:
+2019-02-22 14:45:36 Error: Array
+(
+    [http_status] => 
+)
+
+2019-02-22 14:46:03 Error: Array
+(
+    [http_status] => 
+)
+
+2019-02-22 14:47:47 Error: 
+2019-02-22 14:47:48 Error: 
+2019-02-22 14:49:27 Error: 
+2019-02-22 15:19:41 Error: There was an error while executing createCardToken. We got a status: 0, with error message: No API key provided.  (HINT: set your API key using "Stripe::setApiKey(<API-KEY>)".  You can generate API keys from the Stripe web interface.  See https://stripe.com/api for details, or email support@stripe.com if you have any questions.
+2019-02-22 15:42:50 Error: There was an error while executing createCardToken. We got a status: 0, with error message: No API key provided.  (HINT: set your API key using "Stripe::setApiKey(<API-KEY>)".  You can generate API keys from the Stripe web interface.  See https://stripe.com/api for details, or email support@stripe.com if you have any questions.
+2019-02-22 15:42:52 Error: There was an error while executing createCardToken. We got a status: 0, with error message: No API key provided.  (HINT: set your API key using "Stripe::setApiKey(<API-KEY>)".  You can generate API keys from the Stripe web interface.  See https://stripe.com/api for details, or email support@stripe.com if you have any questions.
+2019-02-22 16:56:51 Error: There was an error while executing charge. We got a status: 0, with error message: Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+2019-03-19 16:06:04 Error: There was an error while executing charge. We got a status: 0, with error message: No such token: [object Object]

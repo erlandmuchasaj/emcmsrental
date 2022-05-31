@@ -1,0 +1,44 @@
+language: php
+
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+
+before_script:
+  - sh -c "composer global require 'phpunit/phpunit=3.7.33'"
+  - mysql -e 'CREATE DATABASE cakephp_test;'
+  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - git clone --depth 2 --branch 2.5.7 https://github.com/cakephp/cakephp.git
+  - sh -c "ln -s ~/.composer/vendor/phpunit/phpunit/PHPUnit cakephp/vendors/PHPUnit"
+  - mkdir cakephp/app/Plugin/Paypal
+  - cp -r Lib cakephp/app/Plugin/Paypal/ 
+  - cp -r Test cakephp/app/Plugin/Paypal/
+  - cd cakephp
+  - chmod -R 777 ./app/tmp
+  - echo "CakePlugin::loadAll();" >> ./app/Config/bootstrap.php
+  - echo "<?php
+    class DATABASE_CONFIG {
+    public \$default = array(
+    'datasource' => 'Database/Mysql',
+    'persistent' => false,
+    'host' => '0.0.0.0',
+    'login' => 'travis',
+    'password' => '',
+    'database' => 'cakephp_test',
+    'prefix' => ''
+    );
+    public \$test = array(
+    'datasource' => 'Database/Mysql',
+    'persistent' => false,
+    'host' => '0.0.0.0',
+    'login' => 'travis',
+    'password' => '',
+    'database' => 'cakephp_test',
+    'prefix' => ''
+    );
+    }" > ./app/Config/database.php
+
+script:
+  - ./app/Console/cake test Paypal Lib/Paypal --stderr

@@ -1,0 +1,31 @@
+{
+  "name": "slide-and-swipe-menu",
+  "version": "1.2.4",
+  "homepage": "https://github.com/JoanClaret/slide-and-swipe-menu",
+  "authors": [
+    "Joan Claret <dpam23@gmail.com>"
+  ],
+  "description": "a slide and swipe menu that works with touchSwipe library",
+  "main": "jquery.slideandswipe.js",
+  "dependencies": {
+  	"jquery": "~1",
+    "jquery-touchswipe": "^1.6.7"
+  },
+  "keywords": [
+    "slide",
+    "navigation",
+    "swipe",
+    "menu",
+    "css",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

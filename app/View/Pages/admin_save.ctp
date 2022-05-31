@@ -1,0 +1,1 @@
+<i class="fa fa-info-circle"></i> <?php echo $message;?>

@@ -1,0 +1,88 @@
+<?php
+	echo $this->Html->css('common/jasny-bootstrap', null, array('block'=>'cssMiddle'));
+	$directory = Configure::read('App.www_root'). 'img' .DS. 'uploads' .DS. 'HomeSlider'. DS . 'small'.DS;
+?>
+<!-- page start-->
+<article class="panel panel-em">
+	<header class="panel-heading">
+		<?php  echo __('Edit HomeSlider Image'); ?>
+	</header>
+	<div class="panel-body">
+		<?php 
+			echo $this->Form->create('HomeSlider',array('type'=>'file','class'=>'form-horizontal')); 
+			echo $this->Form->input('id');
+		?>
+			<div class="form-group">
+				<label class="control-label col-md-3"><?php echo __('Image Upload');?></label>
+				<div class="col-md-9">
+					<div class="fileinput fileinput-new" data-provides="fileinput">
+						<div class="fileinput-new thumbnail" style="max-width: 200px; max-height: 150px;">
+							<?php
+								$image_path = (isset($this->request->data['HomeSlider']['image_path'])) ? $this->request->data['HomeSlider']['image_path'] : '' ;
+								if (file_exists($directory.$image_path) && is_file($directory.$image_path)) {
+									 echo $this->Html->image('uploads/HomeSlider/small/'.$image_path, array('alt' => 'image_path')); 
+								} else {
+									echo $this->Html->image('placeholder.png', array('alt' => 'image_path', 'class'=>''));
+								} 
+							?>
+						</div>
+						<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+						<div>
+							<span class="btn btn-default btn-file">
+								<span class="fileinput-new"><i class="fa fa-paperclip"></i>&nbsp;<?php echo __('Select image');?></span>
+								<span class="fileinput-exists"><i class="fa fa-undo"></i>&nbsp;<?php echo __('Change');?></span>
+								<?php echo $this->Form->input('HomeSlider.image_path', array('type'=>'file','class'=>'default','label'=>false, 'div'=>false,));?>
+							</span>
+							<a href="javascript:void(0);" class="btn btn-default fileinput-exists" data-dismiss="fileinput">
+								<i class="fa fa-trash"></i>&nbsp;
+								<?php echo __('Remove');?>
+							</a>
+						</div>
+					</div>
+					<br />
+					<span class="label label-danger"><?php echo __('NOTE!');?></span>
+					<span>
+						<?php echo __('Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only');?>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3 control-label"><?php echo __('Slogan');?></label>
+				<div class="col-sm-6">
+					<?php echo $this->Form->input('HomeSlider.slogan',array('label'=>false, 'div'=>false,'class'=>'form-control count-char','placeholder'=>__('Slogan'), 'data-maxlength'=>'100')); ?>
+				</div>
+			</div> 
+			<div class="form-group">
+				<label class="col-sm-3 control-label"><?php echo __('URL');?></label>
+				<div class="col-sm-6">
+					<?php echo $this->Form->input('HomeSlider.url',array('label'=>false, 'div'=>false,'class'=>'form-control count-char','placeholder'=>'http://www.example.com/', 'data-maxlength'=>'512')); ?>   
+					<span class="help-block"><?php echo __('Here you can paste absolute URL of a page or another site. ');?></span>
+				</div>
+			</div>  
+			<div class="form-group">
+				<label class="col-sm-3 control-label"><?php echo __('Publish Status');?></label>
+				<div class="col-sm-6">
+					<?php echo $this->Form->input('HomeSlider.status', array('type'=>'checkbox', 'label'=>false, 'div'=>false,'class'=>'bootstrap-switch')); ?>
+					<span class="help-block"><?php echo __('Set yes if you want the slider to be visible to audience. ');?></span>
+				</div>
+			</div>  
+			<div class="form-group">
+				<div class="col-lg-offset-2 col-lg-10">
+					<?php echo $this->Form->submit(__('Submit'), array('class'=>'btn btn-info','label'=>false,'div'=>false)); ?>
+					<?php echo $this->Html->link(__('Cancel'),array('action' => 'index'),array('escape' => false, 'class'=>'btn btn-danger')); ?>
+				</div>
+			</div>   
+		<?php echo $this->Form->end(); ?>
+	</div>
+</article>
+<?php
+	echo $this->Html->script('common/jasny-bootstrap.min', array('block'=>'scriptBottomMiddle')); 
+	$this->Html->scriptBlock("
+		(function($){
+			$(document).ready(function() {
+				'use strict';
+				// code goes below here
+			});
+		})(jQuery);
+	", array('block' => 'scriptBottom'));
+?>

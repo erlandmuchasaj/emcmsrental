@@ -1,0 +1,446 @@
+2018-01-23 23:22:34 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:09:51 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Canceled_Reversal
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [quantity] => 1
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 659056110
+    [notify_version] => 2.4
+    [parent_txn_id] => EARLIERTRANSID001
+    [reason_code] => refund
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AhEqPBa2LPCE3sKdenmfssNtAsh0A-5H68rNRsfq1fJYs6pyDUECnv3Q
+)
+
+2018-01-23 23:22:59 Debug: POST: Array
+(
+    [payment_type] => echeck
+    [payment_date] => Wed Jan 24 2018 00:22:53 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Reversed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 427989287
+    [notify_version] => 2.1
+    [parent_txn_id] => SOMEPRIORTXNID002
+    [reason_code] => chargeback
+    [receipt_ID] => 3012-5109-3782-6103
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => ANMay1OWmFbpXdNwiBMf3YN2lPznAToel6bxRuzXT88cLHj4C4kdAIr1
+)
+
+2018-01-23 23:23:28 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:23:23 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Refunded
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [quantity] => 1
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 220629108
+    [notify_version] => 2.4
+    [parent_txn_id] => EARLIERTRANSID001
+    [reason_code] => refund
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AyDoxrFPCkPRzyLteX7lxpFX8y0AAmUAWLRBnI53.UrF-tcsxA0LadKu
+)
+
+2018-01-23 23:23:41 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:23:35 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Pending
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 9.34
+    [txn_type] => web_accept
+    [txn_id] => 163806866
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => APvissTSNYxEsF2tvyvfCnTn10fsAKokG4asIBROXmpSdrI9X9mEJjqa
+)
+
+2018-01-23 23:23:45 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:23:35 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Pending
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 9.34
+    [txn_type] => web_accept
+    [txn_id] => 163806866
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AlsJnyRN8Sm.6i2n2aEUA6oDeh0oAP6yyUIfqkUnkKs1eevO6lztcgFR
+)
+
+2018-01-23 23:23:57 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:23:51 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Completed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name1] => something
+    [item_number1] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [txn_type] => cart
+    [txn_id] => 899327589
+    [notify_version] => 2.4
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => Af1bo7kjUY-BUO3wz9VJnokdnPNYAkYCiyKwJHfe4eCj-qqgNJyizr1r
+)
+
+2018-01-23 23:24:08 Debug: POST: Array
+(
+    [payment_type] => instant
+    [payment_date] => Wed Jan 24 2018 00:24:04 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name1] => something
+    [item_number1] => AK-1234
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [mc_handling] => 2.06
+    [mc_handling1] => 1.67
+    [mc_shipping] => 3.02
+    [mc_shipping1] => 1.02
+    [txn_type] => cart
+    [txn_id] => 671008621
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AGzV2npgBwt1uwei0DiTEfGub7tbAhV7VE7RvobGp-WAyN.batpHEBmC
+)
+
+2018-01-23 23:24:21 Debug: POST: Array
+(
+    [payment_type] => echeck
+    [payment_date] => Wed Jan 24 2018 00:24:15 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Declined
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 276609395
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AkBezA742JXefy3.CqZeGMWuR29lAI2nMVPlf0QPbWD88tPktY81sOxC
+)
+
+2018-01-23 23:24:32 Debug: POST: Array
+(
+    [payment_type] => echeck
+    [payment_date] => Wed Jan 24 2018 00:24:26 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Completed
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 829816974
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AJv-H8YxFuJx0CKu2yZIRx5l4CNWAmps6s72MF9XpkNQMC2DpAJHcy3h
+)
+
+2018-01-23 23:24:46 Debug: POST: Array
+(
+    [payment_type] => echeck
+    [payment_date] => Wed Jan 24 2018 00:24:38 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Pending
+    [pending_reason] => echeck
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 620553137
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AwsY9US4HFPqe0AuoaqJ-OSIasthArJpqCqtjVN70kwU-PJpOtJXgbAo
+)
+
+2018-01-23 23:24:48 Debug: POST: Array
+(
+    [payment_type] => echeck
+    [payment_date] => Wed Jan 24 2018 00:24:38 GMT+0100 (W. Europe Standard Time)
+    [payment_status] => Pending
+    [pending_reason] => echeck
+    [address_status] => confirmed
+    [payer_status] => verified
+    [first_name] => John
+    [last_name] => Smith
+    [payer_email] => buyer@paypalsandbox.com
+    [payer_id] => TESTBUYERID01
+    [address_name] => John Smith
+    [address_country] => United States
+    [address_country_code] => US
+    [address_zip] => 95131
+    [address_state] => CA
+    [address_city] => San Jose
+    [address_street] => 123 any street
+    [business] => seller@paypalsandbox.com
+    [receiver_email] => seller@paypalsandbox.com
+    [receiver_id] => seller@paypalsandbox.com
+    [residence_country] => US
+    [item_name] => something
+    [item_number] => AK-1234
+    [quantity] => 1
+    [shipping] => 3.04
+    [tax] => 2.02
+    [mc_currency] => USD
+    [mc_fee] => 0.44
+    [mc_gross] => 12.34
+    [mc_gross_1] => 12.34
+    [txn_type] => web_accept
+    [txn_id] => 620553137
+    [notify_version] => 2.1
+    [custom] => xyz123
+    [invoice] => abc1234
+    [test_ipn] => 1
+    [verify_sign] => AxeyRodm3ZBMe9jbU9nAfIOmaJvbAedLYLYirppJ7QAIwJGd4k-etmaI
+)
+
+

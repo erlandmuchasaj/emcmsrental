@@ -1,0 +1,167 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Paypal/Lib/Paypal.php:338
+msgid "Paypal Error"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:340
+msgid "An error occured while getting the status of your account."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:392;438;1218;1261;1309;1463
+msgid "There was an error while connecting to Paypal"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:395
+msgid "There was a problem initiating the transaction, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:441;1221;1264;1312;1466
+msgid "There was a problem getting your details, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:497;1379
+msgid "There was an error completing the payment"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:500;1382
+msgid "There was a problem processing the transaction, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:534
+msgid "There was an error processing the card payment"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:537
+msgid "There was a problem processing your card, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:574
+msgid "There was an error processing the payment"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:577
+msgid "There was a problem processing the payment, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:590;670;1012;1395
+msgid "You must pass a valid order array"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:593;673
+msgid "authorization_id must be passed."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:596
+msgid "You must pass an amount must be passed."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:599;1024;1399
+msgid "You must provide a currency code"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:654
+msgid "There was an error voiding the payment"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:657
+msgid "There was a problem voiding the payment, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:724
+msgid "There was an error processing the the refund"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:727
+msgid "A problem occurred during the refund process, please try again."
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:770;814;849
+msgid "There was an problem communicating with the payment gateway"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:833
+msgid "Missing client id/secret"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:876;965
+msgid "Must specify an expiry date"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:881;970
+msgid "Must include a M and Y in expiry date"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:889
+msgid "Invalid expiry date"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:895
+msgid "Invalid card number"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:899
+msgid "Invalid CVV2 number"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:905
+msgid "Invalid card type"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:947
+msgid "Could not detect client IP address"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:951
+msgid "Not a valid credit card number"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:956
+msgid "You must include the 3 digit security number"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:961
+msgid "Must specify an \"amount\" to charge"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1016
+msgid "Valid \"return\" url must be provided"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1020
+msgid "Valid \"cancel\" url must be provided"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1131;1278
+msgid "Original PayPal Transaction ID is required"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1158
+msgid "Must specify an \"amount\" to refund"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1479
+msgid "You must pass a valid search array"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1484
+msgid "Start date is Required"
+msgstr ""
+
+#: Plugin/Paypal/Lib/Paypal.php:1742
+msgid "Missing POST Data"
+msgstr ""
+

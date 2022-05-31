@@ -1,0 +1,433 @@
+@charset "utf-8";
+.DOPBackendBookingCalendarPRO_Container{background: #ffffff;font: 12px/1em Arial, Helvetica, sans-serif !important;margin: 0;padding: 0;position: relative;}
+.DOPBackendBookingCalendarPRO_Container.loader{background: #ffffff url(loader.gif) no-repeat center center;height: 15px;margin: 10px 0 0 0;padding: 5px 0;}
+.DOPBackendBookingCalendarPRO_Clear{clear: both;}
+/******************************************************************************* Navigation */
+.DOPBackendBookingCalendarPRO_Navigation{background-color: #101010;margin: 0;padding: 0;position: relative;z-index: 200;}
+.DOPBackendBookingCalendarPRO_Navigation .previous_btn{background: url(sprite.png) 0 0;cursor: pointer;display: none;height: 24px;margin: 0;padding: 0;position: absolute;right: 40px;top: 10px;width: 24px;}
+.DOPBackendBookingCalendarPRO_Navigation .previous_btn.hover{background: url(sprite.png) -25px 0;}
+.DOPBackendBookingCalendarPRO_Navigation .next_btn{background: url(sprite.png) -50px 0;cursor: pointer;height: 24px;margin: 0;padding: 0;position: absolute;right: 10px;top: 10px;width: 24px;}
+.DOPBackendBookingCalendarPRO_Navigation .next_btn.hover{background: url(sprite.png) -75px 0;}
+.DOPBackendBookingCalendarPRO_Navigation .add_btn{background: url(sprite.png) -100px 0;cursor: pointer;height: 24px;left: 10px;margin: 0;padding: 0;position: absolute;top: 10px;width: 24px;}
+.DOPBackendBookingCalendarPRO_Navigation .add_btn.hover{background: url(sprite.png) -125px 0;}
+.DOPBackendBookingCalendarPRO_Navigation .remove_btn{background: url(sprite.png) -150px 0;cursor: pointer;display: none;height: 24px;left: 40px;margin: 0;padding: 0;position: absolute;top: 10px;width: 24px;}
+.DOPBackendBookingCalendarPRO_Navigation .remove_btn.hover{background: url(sprite.png) -175px 0;}
+.DOPBackendBookingCalendarPRO_Navigation .month_year{color: #e0e0e0;font: bold 16px/24px Arial, Helvetica, sans-serif !important;margin: 0;padding: 10px;text-align: center;}
+.DOPBackendBookingCalendarPRO_Navigation .week{margin: 0;padding: 0 5px 10px 5px;}
+.DOPBackendBookingCalendarPRO_Navigation .week .day{color: #e0e0e0;display: block;font: 12px/1em Arial, Helvetica, sans-serif !important;float: left;margin: 0;padding: 0;text-align: center;}
+/******************************************************************************* Calendar */
+.DOPBackendBookingCalendarPRO_Calendar{margin: 0;position: relative;text-align: center;z-index: 300;}
+.DOPBackendBookingCalendarPRO_Month{background: #ffffff;padding: 15px 5px;}
+.DOPBackendBookingCalendarPRO_Month .month_year{border-bottom: 1px solid #e0e0e0;color: #6f6f6f;font-size: 15px;font-weight: bolder;line-height: 1em;margin: 0 0 10px 0;padding: 5px 0 10px 5px;position: relative;text-align: left;}
+/******************************************************************************* Day */
+.DOPBackendBookingCalendarPRO_Day{float: left;margin: 2px 0 0 0;padding: 0;}
+.DOPBackendBookingCalendarPRO_Day .bind-left, 
+.DOPBackendBookingCalendarPRO_Day .bind-right{float: left;opacity: 0;filter: alpha(opacity=0);width: 1px;}
+.DOPBackendBookingCalendarPRO_Day .bind-left.enabled, 
+.DOPBackendBookingCalendarPRO_Day .bind-right.enabled{opacity: 1;filter: alpha(opacity=100);}
+.DOPBackendBookingCalendarPRO_Day .bind-left .header, 
+.DOPBackendBookingCalendarPRO_Day .bind-right .header{
+background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-left: none !important;
+border-right: none !important;
+font: bold 12px/15px Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 2px 0 2px 0 !important;
+width: 1px !important;
+}
+.DOPBackendBookingCalendarPRO_Day .bind-left .content, 
+.DOPBackendBookingCalendarPRO_Day .bind-right .content{
+background: #ffffff !important;
+border-bottom: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+font: bold 12px/1em Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 4px 0 4px 0 !important;
+width: 1px !important;
+}
+.DOPBackendBookingCalendarPRO_Day .bind-content{float: left;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header{
+background: #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+-webkit-border-top-left-radius: 2px !important;
+-webkit-border-top-right-radius: 2px !important;
+-moz-border-topleft-radius: 2px !important;
+-moz-border-topright-radius: 2px !important;
+border-top-left-radius: 2px !important;
+border-top-right-radius: 2px !important;
+display: block !important;
+line-height: 1em !important;
+margin: 0 !important;
+padding: 2px 0 2px 5px !important;
+width: auto !important;
+}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group1 .header{-webkit-border-top-left-radius: 2px !important;-webkit-border-top-right-radius: 0px !important;-moz-border-topleft-radius: 2px !important;-moz-border-topright-radius: 0px !important;border-top-left-radius: 2px !important;border-top-right-radius: 0px !important;border-right: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group2 .header{-webkit-border-top-left-radius: 0px !important;-webkit-border-top-right-radius: 0px !important;-moz-border-topleft-radius: 0px !important;-moz-border-topright-radius: 0px !important;border-top-left-radius: 0px !important;border-top-right-radius: 0px !important;border-left: none !important;border-right: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group3 .header{-webkit-border-top-left-radius: 0px !important;-webkit-border-top-right-radius: 2px !important;-moz-border-topleft-radius: 0px !important;-moz-border-topright-radius: 2px !important;border-top-left-radius: 0px !important;border-top-right-radius: 2px !important;border-left: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header .day{color: #ffffff;float: left;font: bold 12px/15px Arial, Helvetica, sans-serif !important;margin: 0;padding: 0;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header .notes{background: url(sprite.png) -230px 0;float: right;height: 15px;margin: 0 2px 0 0;width: 15px;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header .notes.hover{background: url(sprite.png) -245px 0;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header .info{background: url(sprite.png) -200px 0;float: right;height: 15px;margin: 0 2px 0 0;width: 15px;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .header .info.hover{background: url(sprite.png) -215px 0;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .content{
+background: #ffffff !important;
+border: 1px solid #cccccc !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your DEFAULT color. */
+border-top: none !important;
+-webkit-border-bottom-left-radius: 2px !important;
+-webkit-border-bottom-right-radius: 2px !important;
+-moz-border-bottomleft-radius: 2px !important;
+-moz-border-bottomright-radius: 2px !important;
+border-bottom-left-radius: 2px !important;
+border-bottom-right-radius: 2px !important;
+color: #222222 !important;
+display: block !important;
+font: 12px/1em Arial, Helvetica, sans-serif !important;
+margin: 0 !important;
+padding: 4px 5px 4px 5px !important;
+text-align: left !important;
+vertical-align: middle !important;
+width: auto !important;
+}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group1 .content{-webkit-border-bottom-left-radius: 3px !important;-webkit-border-bottom-right-radius: 0px !important;-moz-border-bottomleft-radius: 3px !important;-moz-border-bottomright-radius: 0px !important;border-bottom-left-radius: 3px !important;border-bottom-right-radius: 0px !important;border-right: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group2 .content{-webkit-border-bottom-left-radius: 0px !important;-webkit-border-bottom-right-radius: 0px !important;-moz-border-bottomleft-radius: 0px !important;-moz-border-bottomright-radius: 0px !important;border-bottom-left-radius: 0px !important;border-bottom-right-radius: 0px !important;border-left: none !important;border-right: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content.group3 .content{-webkit-border-bottom-left-radius: 0px !important;-webkit-border-bottom-right-radius: 3px !important;-moz-border-bottomleft-radius: 0px !important;-moz-border-bottomright-radius: 3px !important;border-bottom-left-radius: 0px !important;border-bottom-right-radius: 3px !important;border-left: none !important;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .content .old-price{color: #909090;float: left;font: 12px/1em Arial, Helvetica, sans-serif !important;text-decoration: line-through;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .content .price{color: #606060;float: left;font: bold 12px/1em Arial, Helvetica, sans-serif !important;padding: 0 5px 0 0;}
+.DOPBackendBookingCalendarPRO_Day .bind-content .content .available{color: #909090;font: 11px/1em Arial, Helvetica, sans-serif !important;width: 100%;}
+/* Last Month Day */
+.DOPBackendBookingCalendarPRO_Day.last_month{cursor: pointer;opacity: 0.5;filter: alpha(opacity=50);}
+/* Past Day */
+.DOPBackendBookingCalendarPRO_Day.past_day{opacity: 0.25;filter: alpha(opacity=25);}
+/* Current Month Day */
+.DOPBackendBookingCalendarPRO_Day.curr_month{cursor: pointer;}
+/* Next Month Day */
+.DOPBackendBookingCalendarPRO_Day.next_month{cursor: pointer;opacity: 0.5;filter: alpha(opacity=50);}
+/* Available Day */
+.DOPBackendBookingCalendarPRO_Day.available .header{
+background: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+.DOPBackendBookingCalendarPRO_Day.available .content{
+border-color: #68ba68 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your AVAILABLE color. */
+}
+/* Booked Day */
+.DOPBackendBookingCalendarPRO_Day.booked .header{
+background: #FBC210 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. #dd6464 */
+border-color: #FBC210 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. #dd6464  */
+}
+.DOPBackendBookingCalendarPRO_Day.booked .content{
+border-color: #FBC210 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your BOOKED color. */
+}
+/* Special Day */
+.DOPBackendBookingCalendarPRO_Day.special .header{
+background: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+.DOPBackendBookingCalendarPRO_Day.special .content{
+border-color: #ba68ba !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SPECIAL color. */
+}
+/* Unavailable Day */
+.DOPBackendBookingCalendarPRO_Day.unavailable .header{
+background: #E22424 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. #cccccc*/
+border-color: #E22424 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. #cccccc*/
+}
+.DOPBackendBookingCalendarPRO_Day.unavailable .content{
+border-color: #E22424 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your UNAVAILABLE color. #cccccc*/
+}
+/* Selected Day */
+.DOPBackendBookingCalendarPRO_Day.selected .header{
+background: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+border-color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+.DOPBackendBookingCalendarPRO_Day.selected .header .notes{display: none;}
+.DOPBackendBookingCalendarPRO_Day.selected .header .info{display: none !important;}
+.DOPBackendBookingCalendarPRO_Day.selected .content{
+color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+border-color: #000000 !important; /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Change to your SELECTED color. */
+}
+/* Mask Day */
+.DOPBackendBookingCalendarPRO_Day.mask{cursor: default;opacity: 0;filter: alpha(opacity=0);}
+/* Hide Day */
+.DOPBackendBookingCalendarPRO_Day.hide{display: none;}
+/* Grouped Days - First Column */
+.DOPBackendBookingCalendarPRO_Day.first-column .bind-left{opacity: 0 !important;filter: alpha(opacity=0) !important;}
+/* Grouped Days - Last Column */
+.DOPBackendBookingCalendarPRO_Day.last-column .bind-content.group1 .header .ci,
+.DOPBackendBookingCalendarPRO_Day.last-column .bind-content.group2 .header .ci{right: 0px !important;}
+.DOPBackendBookingCalendarPRO_Day.last-column .bind-right{opacity: 0 !important;filter: alpha(opacity=0) !important;}
+/******************************************************************************* Form */
+.DOPBackendBookingCalendarPRO_FormWrapper{display: none;left: 0;position: absolute;top: 0;width: 100%;z-index: 1000;}
+.DOPBackendBookingCalendarPRO_FormBackground{background: #ededed;opacity: 0.8;position: absolute;width: 100% !important;}
+.DOPBackendBookingCalendarPRO_FormContainer{margin: auto;position: relative;width: 300px;}
+.DOPBackendBookingCalendarPRO_Form{margin: 0;padding: 0;}
+.DOPBackendBookingCalendarPRO_Form .container{background: #101010;padding: 10px;max-width: 280px;}
+.DOPBackendBookingCalendarPRO_Form .section{background: #f3f3f3;-webkit-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;border: 1px solid #cccccc;margin: 10px 0 0 0;padding: 5px 10px 10px 10px;max-width: 400px;}
+.DOPBackendBookingCalendarPRO_Form .section.first{margin-top: 0;}
+.DOPBackendBookingCalendarPRO_Form .section-item{line-height: 1em;padding: 5px 0 0 0;}
+.DOPBackendBookingCalendarPRO_Form .section-item.last{padding: 0;}
+.DOPBackendBookingCalendarPRO_Form .section-item label{color: #606060;display: block;float: left;font: 400 12px/1em Arial, Helvetica, sans-serif !important;width: 100px}
+.DOPBackendBookingCalendarPRO_Form .section-item label.type2{margin: 5px 0 5px 0;}
+.DOPBackendBookingCalendarPRO_Form .section-item label.type3{margin: 5px 0 5px 0;width: auto;}
+.DOPBackendBookingCalendarPRO_Form .section-item label.type4{margin: 0 0 5px 0;width: auto;}
+.DOPBackendBookingCalendarPRO_Form .section-item label.type5{float: none;padding: 0 0 0 20px;width: auto;}
+.DOPBackendBookingCalendarPRO_Form .section-item .date{color: #000000;display: block;float: left;font: bold 13px/1em Arial, Helvetica, sans-serif !important;}
+.DOPBackendBookingCalendarPRO_Form .section-item select{font-size: 12px;float: left;margin: 0;padding: 2px;width: 100px;}
+.DOPBackendBookingCalendarPRO_Form .section-item input[type=text]{float: left;font: 12px/1em Arial, Helvetica, sans-serif !important;margin: 0;padding: 2px;width: 60px;}
+.DOPBackendBookingCalendarPRO_Form .section-item .currency{color: #888888;display: block;float: left;font: 12px/1em Arial, Helvetica, sans-serif !important;margin: 5px 0 0 5px;width: 10px;}
+.DOPBackendBookingCalendarPRO_Form .section-item input:disabled{background: #f2f2f2;}
+.DOPBackendBookingCalendarPRO_Form .section-item textarea{font: 12px/1em Arial, Helvetica, sans-serif !important;height: 40px;margin: 0;padding: 5px;resize: none;width: 246px;}
+.DOPBackendBookingCalendarPRO_Form .section-item input[type=checkbox]{float: left;margin: 0 5px 0 0;}
+.DOPBackendBookingCalendarPRO_Form .section-item select:focus, 
+.DOPBackendBookingCalendarPRO_Form .section-item input[type=text]:focus,
+.DOPBackendBookingCalendarPRO_Form .section-item textarea:focus{border-color: #bbce3d;outline: none;}
+.DOPBackendBookingCalendarPRO_Form .section input[type=button]{background: #000000;border: none;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;color: #ffffff;cursor: pointer;float: left;margin: 5px 10px 0 0;padding: 5px 10px;-webkit-transition: background 300ms linear;-moz-transition: background 300ms linear;-ms-transition: background 300ms linear;-o-transition: background 300ms linear;transition: background 300ms linear;}
+.DOPBackendBookingCalendarPRO_Form .section input[type=button]:hover{background: #313131;-webkit-transition: background 300ms linear;-moz-transition: background 300ms linear;-ms-transition: background 300ms linear;-o-transition: background 300ms linear;transition: background 300ms linear;}
+/******************************************************************************* Info */
+.DOPBackendBookingCalendarPRO_Info{background: #fcfcfc;border: 1px solid #909090;-webkit-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;-moz-box-shadow: 2px 2px 4px #b0b0b0;-webkit-box-shadow: 2px 2px 4px #b0b0b0;box-shadow: 2px 2px 4px #b0b0b0;color: #606060;display: none;font: normal 12px/1em Arial, Helvetica, sans-serif !important;max-width: 300px;left: 0px;padding: 10px;position: absolute;top: 0px;z-index: 1000000;}
+
+/*
+ * ********************************************************* Begin messages box.
+ */
+#DOPBCP-messages-background{
+    background: #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000000;
+}
+
+#DOPBCP-messages-box{
+    background: #252525;
+    border: none;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    min-height: 40px;
+    padding: 20px 10px;
+    position: fixed;
+    top: -80px;
+    width: 230px;
+    visibility: hidden; 
+    z-index: 10000001;
+    -webkit-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+#DOPBCP-messages-box .dopbcp-icon-active,
+#DOPBCP-messages-box .dopbcp-icon-success,
+#DOPBCP-messages-box .dopbcp-icon-error{
+    display: none;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#DOPBCP-messages-box .dopbcp-icon-active{
+    background: url('sprite1.png') 0 -40px;
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: dopbcp-loader; 
+    -webkit-animation-timing-function: linear;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-animation-duration: 1s; 
+    -moz-animation-name: dopbcp-loader; 
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    animation-duration: 1s; 
+    animation-name: dopbcp-loader; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition-property: -moz-transform;
+    transition-duration: 1s;
+}
+
+@-webkit-keyframes dopbcp-loader{
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes dopbcp-loader{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+@keyframes dopbcp-loader{
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+
+#DOPBCP-messages-box .dopbcp-icon-success{
+    background: url('sprite1.png') 0 -40px;
+}
+
+#DOPBCP-messages-box .dopbcp-icon-error{
+    background: url('sprite1.png') -40px -40px;
+}
+
+#DOPBCP-messages-box .dopbcp-message{
+    color: #e1e1e1;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 15px;
+    min-height: 40px;
+    vertical-align: middle;
+    width: 175px;
+}
+
+#DOPBCP-messages-box .dopbcp-close{
+    background-color: #252525;
+    background-image: url('sprite1.png');
+    background-position: -80px -40px;
+    border: 1px solid #ffffff;
+    border-right: none;
+    border-top: none;
+    display: none;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+    width: 25px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+#DOPBCP-messages-box .dopbcp-close:hover{
+    background-color: #ff6300;
+}
+
+#DOPBCP-messages-background.dopbcp-active{
+    display: block;
+}
+
+#DOPBCP-messages-box.dopbcp-active{
+    margin: -40px 0 0 -125px;
+    top: 50%;
+    visibility: visible; 
+}
+
+#DOPBCP-messages-box.dopbcp-active-info .dopbcp-icon-active,
+#DOPBCP-messages-box.dopbcp-active .dopbcp-icon-active{
+    display: block;
+}
+
+#DOPBCP-messages-box.dopbcp-success .dopbcp-icon-success{
+    display: block;
+}
+
+#DOPBCP-messages-box.dopbcp-error .dopbcp-icon-error{
+    display: block;
+}
+
+#DOPBCP-messages-box.dopbcp-active-info,
+#DOPBCP-messages-box.dopbcp-error,
+#DOPBCP-messages-box.dopbcp-success{
+    top: 33px;
+    visibility: visible; 
+}
+
+#DOPBCP-messages-box.dopbcp-error .dopbcp-close,
+#DOPBCP-messages-box.dopbcp-success .dopbcp-close{
+    display: block;
+}
+/*
+ * *********************************************************** End messages box.
+ */
+
+/*
+ * ***************************************************** Begin confirmation box.
+ */
+#DOPBCP-confirmation-box{
+    background: #252525;
+    border: none;
+    left: 50%;
+    margin: 0 0 0 -125px;
+    min-height: 40px;
+    padding: 20px 10px;
+    position: fixed;
+    top: -120px;
+    width: 230px;
+    visibility: hidden;
+    z-index: 10000001;
+    -webkit-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -moz-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    -o-transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+    transition: margin-top 300ms ease-out, top 300ms ease-out, visibility 300ms ease-out;
+}
+
+#DOPBCP-confirmation-box .dopbcp-icon{
+    background: url('sprite1.png') -120px -40px;
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#DOPBCP-confirmation-box .dopbcp-message{
+    color: #e1e1e1;
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 300;
+    height: 40px;
+    line-height: 15px;
+    min-height: 40px;
+    vertical-align: middle;
+    width: 190px;
+}
+
+#DOPBCP-confirmation-box .dopbcp-buttons{
+    background: #ffffff;
+    margin: 20px -10px -20px -10px;
+    overflow: hidden;
+    width: 250px;
+}
+
+#DOPBCP-confirmation-box .dopbcp-buttons a{
+    background: #252525;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 39px;
+    line-height: 39px;
+    margin: 1px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    width: 124.5px;
+    -webkit-transition: background-color 600ms linear;
+    -moz-transition: background-color 600ms linear;
+    -o-transition: background-color 600ms linear;
+    transition: background-color 600ms linear;
+}
+
+#DOPBCP-confirmation-box .dopbcp-buttons a.dopbcp-button-yes{
+    float: left;
+}
+
+#DOPBCP-confirmation-box .dopbcp-buttons a.dopbcp-button-no{
+    float: right;
+}
+
+#DOPBCP-confirmation-box .dopbcp-buttons a:hover{
+    background: #ff6300;
+}
+
+#DOPBCP-confirmation-box.dopbcp-active{
+    margin: -60px 0 0 -125px;
+    top: 50%;
+    visibility: visible; 
+}
+/*
+ * ******************************************************* End confirmation box.
+ */
