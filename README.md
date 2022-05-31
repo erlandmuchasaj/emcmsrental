@@ -12,21 +12,10 @@ You can make pull request if you want to change anything  or use it for your own
 
 ## Some Handy Links
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
-
-[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
-
-
+[Documentation](http://emcmsrental-doc.erlandmuchasaj.tech/) - EMCMS Rental user documentation; start here!
 
 
 ## Contributing
 
 [CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the EMCMS project
-
-
-## Schema Links
-cd /app cake schema generate -f // generates the schema
-cd /app cake schema create // createthe mysql table from schema
-cd /app cake schema update -s 2 // update to a scpecific schema file
-
 
