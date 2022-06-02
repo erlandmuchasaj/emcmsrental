@@ -22,12 +22,12 @@
 
 // Paypal Configuration Credentials
 $config['PayPal'] = [
-	'API_username'   => 'erlandi_20-facilitator_api1.hotmail.com',
-	'API_password'   => 'C54BURK3UWMQKPCN',
-	'API_signature'  => 'AJaSZvMmqgyAMODA8CnX1wYcW.ckA..ZYEWq2hep2nkn6aaGZkH2D4tB',
-	'APP_ID'		 => 'APP-80W284485P519543T',
-	'LOGIN_CLIENT_ID'=> 'ATsfTjJogq7dDuySiNMrLqsWFSIwViqpyjVH7109VIB2uxOTNcR3l-LTboGspsxntyJV6FdCaA2OyE7G',
-	'LOGIN_SECRET'   => 'EPYnRdwXCSIdvQvTcaotznysh-6VBZg4XumFDQCUN8HaUPP5_lPlUoo8VZsNeI5pOa7IfXSFtm6kYJWe',
+	'API_username'   => '',
+	'API_password'   => '',
+	'API_signature'  => '',
+	'APP_ID'	 => '',
+	'LOGIN_CLIENT_ID'=> '',
+	'LOGIN_SECRET'   => '',
 	'SANDBOX_flag'   => true,
 	'RETURN_url'     => rtrim(Configure::read('App.fullBaseUrl'), '/\\') . '/paymentSuccess',
 	'CANCEL_url'     => rtrim(Configure::read('App.fullBaseUrl'), '/\\') . '/paymentCancel',
@@ -39,8 +39,8 @@ $config['PayPal'] = [
 
 // Stripe Configuration Credentials
 $config['Stripe'] = [
-	'Secret'=> 'sk_test_tqgfn8bxdbNOEVCsO2uBXY3c',
-	'Publishable'=> 'pk_test_HOEZH30MPZ7DTgkw2nWmLLyB',
+	'Secret'=> '',
+	'Publishable'=> '',
 	'mode'      => 'Test',
 	'currency'  => 'usd',
 	'fields'    => [
@@ -62,11 +62,11 @@ $config['Stripe'] = [
 // TwoCheckout Configuration Credentials
 $config['TwoCheckout'] = [
 	'sandbox' => [
-		'publishableKey' => 'C1F8FD30-3A20-498B-B9D9-E595E59E2B99',
-		'privateKey' => '7ABA4648-4142-4229-B518-D772D0BC13F6',
-		'username' => 'erlandmuchasaj',
+		'publishableKey' => '',
+		'privateKey' => '',
+		'username' => '',
 		'password' => '',
-		'sellerId' => '901403601',
+		'sellerId' => '',
 	],
 	'live' => [
 		'publishableKey' => '',
@@ -84,7 +84,7 @@ $config['TwoCheckout'] = [
 
 // google Map Default Setting
 $config['Google'] = [
-	'key'  => 'AIzaSyCZH6qxBhkmUjVS9kd5of6cqMKBHiBbVxQ',
+	'key'  => '',
 	'api'  => '2',
 	'zoom' => 13,
 	'lat'  => 51,
@@ -96,14 +96,14 @@ $config['Google'] = [
 // Twilio messaging system API credencials
 $config['Twilio'] = [
 	'sandbox' => [
-		'AccountSid' => 'ACde8fc5dfc06bb138b2316f5481e0e36e',
-		'AuthToken' => '5f962e713051ac579423107e2a3f91aa',
-		'from' => '+15005550006',
+		'AccountSid' => '',
+		'AuthToken' => '',
+		'from' => '',
 	],
 	'live' => [
-		'AccountSid' => 'AC4a74f26487760fb52e7d86ef07b7546e',
-		'AuthToken' => '8d60b03784db912ee84e142876ece651',
-		'from' => '+19179094833',
+		'AccountSid' => '',
+		'AuthToken' => '',
+		'from' => '',
 	],
 	'mode' => 'sandbox',
 	'enabled' => true,
@@ -159,7 +159,7 @@ $config['Website'] = [
 	// currency entiti data
 	'currency_entity' => '&euro;',
 	'currency_decimal' => '&#8364;',
-	'currency_symbol' => '€',
+	'currency_symbol' => 'â‚¬',
 	'currency_position' => '%1$s %2$s', # [%2$s] - price, [%1$s] - currency
 	'currency_format' => [
 		'thousands' => ',',
@@ -187,15 +187,15 @@ $config['Website'] = [
 	'email_driver' 	 => 'smtp',	# smtp, default, fast, mailtrap 
 	'email_provider' => 'Smtp',	# Mailtrap, Smtp, Sendgrid, Sendinblue
 	#=================== EDIT ONLY BELOW HERE ============================#
-	'email_host' 	 => 'mail.erlandmuchasaj.com', # host name
-	'email_username' => 'do-not-reply@erlandmuchasaj.com', 	 # username aka email
-	'email_password' => '0aBhbzSmIvAp', # email password
+	'email_host' 	 => '', # host name
+	'email_username' => '', 	 # username aka email
+	'email_password' => '', # email password
 	'email_port' 	 => 587,			# port
 	'email_timeout'  => 30,				# timeout
-	'email_from' 	 => 'do-not-reply@erlandmuchasaj.com', # deliver email
+	'email_from' 	 => '', # deliver email
 	'email_from_name'=> 'EMCMS',		# Name
-	'email_tls'		 => false,
-	'email_log'		 => false,
+	'email_tls'	 => false,
+	'email_log'	 => false,
 	'email_client'	 => null,
 	'email_ssl_allow_self_signed' => false,
 ];
@@ -241,41 +241,41 @@ $config['Mail'] = [
 	'debug_mode' => (bool)Configure::read('debug'),
 	'providers' => [
 		'Smtp' => [
-			'host' 	   => 'mail.erlandmuchasaj.com',# host
-			'username' => 'do-not-reply@erlandmuchasaj.com', # username
-			'password' => '0aBhbzSmIvAp', 	# password
+			'host' 	   => 'mail.host.com',# host
+			'username' => '', # username
+			'password' => '', 	# password
 			'port' 	   => 587,			 	# port
 			'timeout'  => 30, 				# timeout
 			'enabled'  => true,
 		],
 		'Sendgrid' => [
 			'host' 	   => 'smtp.sendgrid.net',# host
-			'username' => 'erlandmuchasaj',	# username
-			'password' => 'erlandi852123', 	# password
+			'username' => '',	# username
+			'password' => '', 	# password
 			'port' 	   => 587,			 	# port
 			'timeout'  => 30, 				# timeout
 			'enabled'  => true,
 		],
 		'Sendinblue' => [
 			'host' 	   => 'smtp-relay.sendinblue.com', # host
-			'username' => 'erland.muchasaj@gmail.com', # username
-			'password' => 'jNT1OYbptU9rdHv4',		   # password
+			'username' => '', # username
+			'password' => '', # password
 			'port' 	   => 587,			 	 		   # port
 			'timeout'  => 30, 				 		   # timeout
 			'enabled'  => true,
 		],
 		'Mailgun' => [
 			'host' 	   => 'smtp.mailgun.org',# host
-			'username' => 'postmaster@sandboxfbe5e52e942041e9a46c27049afcac31.mailgun.org',  # username
-			'password' => 'xxxxxxxxxxxxxx',  # password
+			'username' => '',  # username
+			'password' => '',  # password
 			'port' 	   => 25,			 	 # port
 			'timeout'  => 30, 				 # timeout
 			'enabled'  => true,
 		],
 		'Mailtrap' => [
 			'host' 	   => 'smtp.mailtrap.io',# host
-			'username' => '7d309d46384602',  # username
-			'password' => '5f8f6d470dda15',  # password
+			'username' => '',  # username
+			'password' => '',  # password
 			'port' 	   => 2525,			 	 # port
 			'timeout'  => 30, 				 # timeout
 			'enabled'  => true,
@@ -300,8 +300,8 @@ $config['Hybridauth'] = [
 		'Google' => [
 			'enabled' => true,
 			'keys' => [
-				'id' => '660647825618-4cmmlfpi25sjmool6jc1dt3efq2kt98e.apps.googleusercontent.com',
-				'secret' => 'RFr8bSKA6SFY6zUibF63ZNGg',
+				'id' => '',
+				'secret' => '',
 			],
 			# this is the format of return url on google.
 			// 'redirect_uri' => 'http://mywebsite.com/social_endpoint?hauth.done=Google',
@@ -309,9 +309,9 @@ $config['Hybridauth'] = [
 		'GitHub' => [
 			'enabled' => true,
 			'keys' => [
-				'id' => '0449dd38c1c8982e3bbf', 
+				'id' => '', 
 				'key' => null, 
-				'secret' => 'd4e1fc2e37d05efb4854567e25ed139408d62dc2',
+				'secret' => '',
 			],
 			'scope' => 'user,read'
 			# 'redirect_uri' => 'http://mywebsite.com/social_endpoint?hauth.done=GitHub'
@@ -319,16 +319,16 @@ $config['Hybridauth'] = [
 		'Twitter' => [
 			'enabled' => false,
 			'keys' => [
-				'key' => 'BofoggMnsbBqtfbJ7TRFsgAKr', 
-				'secret' => 'lEvn7vKPMPqI6xzc6mf3GxKvJouoaw4bB8t24tkWNbRbbDCPDy',
+				'key' => '', 
+				'secret' => '',
 			],
 			'includeEmail' => true,
 		],
 		'Facebook' => [
 			'enabled' => false,
 			'keys' => [
-				'id' =>'120966618318988',
-				'secret' => '4704fc4f60576650d23717f896d45da3'
+				'id' =>'',
+				'secret' => ''
 			],
 			'trustForwarded' => false,
 		],
